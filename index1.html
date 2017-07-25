@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				height: 1821px;
+				width:1024px;
+				overflow: hidden;
+				margin: 0 auto;
+			}
+			p,ul,li{
+				margin: 0;
+				padding: 0;
+			}
+			ul,li{
+				list-style: none;
+			}
+			img{
+				border: 0;
+				display: block;
+			}
+			.clearfix:after{
+				content: ".";
+				height: 0;
+				display: block;
+				overflow: hidden;
+				visibility: hidden;
+				clear: both;
+			}
+			.swiper-container {
+			    height: 1821px;
+				width:1024px;
+			}
+			.swiper-slide:nth-of-type(2){
+				background-color: coral;
+			}
+			.swiper-slide:nth-of-type(3){
+				background-color: yellowgreen;
+			}
+			.swiper-slide:nth-of-type(4){
+				background-color: coral;
+			}
+			.swiper-slide:nth-of-type(5){
+				background-color: yellowgreen;
+			}
+			#box1{
+				height: 1821px;
+				width:1024px;
+				background: url(images/page1_bg.png) no-repeat;
+				position: relative;
+			}
+			.people1{
+				position: absolute;
+				left: 142px;
+				bottom: 298px;
+			}
+			.people2{
+				position: absolute;
+				right: 145px;
+				bottom: 289px;
+			}
+			.people3{
+				position: absolute;
+				right: 333px;
+				top: 803px;
+				z-index: 2;
+			}
+			.yuan{
+				position: absolute;
+				left: 76px;
+				bottom: 358px;
+			}
+			.xian1{
+				position: absolute;
+				left: 213px;
+				bottom:520px;
+				z-index: 3;
+			}
+			.xian2{
+				position: absolute;
+				left: 140px;
+				top:795px;
+				z-index: 0;
+			}
+			.ball1{
+				position: absolute;
+				left: 110px;
+				bottom: 220px;
+			}
+			.ball2{
+				position: absolute;
+				right: 40px;
+				bottom: 469px;
+			}
+			.ball3{
+				position: absolute;
+				right: 110px;
+				bottom: 508px;
+			}
+			.ball4{
+				position: absolute;
+				right: 285px;
+				bottom:262px;
+				z-index: 2;
+			}
+			.ball5{
+				position: absolute;
+				right: 67px;
+				top:788px;
+			}
+			.ball6{
+				position: absolute;
+				right: 171px;
+				top:383px;
+			}
+			.ball7{
+				position: absolute;
+				left: 49px;
+				top:556px;
+			}
+			.ball8{
+				position: absolute;
+				left: 244px;
+				top:1021px;
+				z-index: 2;
+			}
+			.chilun1{
+				position: absolute;
+				left: 125px;
+				bottom: 585px;
+				z-index: 1;
+			}
+			.chilun2{
+				position: absolute;
+				left:140px;
+				bottom:782px;
+				z-index: 1;
+			}
+			.chilun3{
+				position: absolute;
+				left:235px;
+				bottom:728px;
+				z-index: 1;
+			}
+			.chilun4{
+				position: absolute;
+				right: 248px;
+				bottom:685px;
+				z-index: 1;
+			}
+			.chilun5{
+				position: absolute;
+				right:132px;
+				bottom: 511px;
+				z-index: 1;
+			}
+			.chilun6{
+				position: absolute;
+				right:72px;
+				bottom:665px;
+				z-index: 1;
+			}
+			.chilun7{
+				position: absolute;
+				right: 430px;
+				bottom:495px;
+				z-index: 1;
+			}
+			.chilun8{
+				position: absolute;
+				left: 316px;
+				bottom:685px;
+				z-index: 1;
+			}
+			.zhalan{
+				position: absolute;
+				left: 225px;
+				top:-750px;
+			}
+			#word{
+				position: absolute;
+				bottom: 100px;
+				left: 0;
+			}
+			#word2{
+				position: absolute;
+				left: 37px;
+				bottom: 220px;
+				transform: scale(0);
+			}
+			#word0{
+				position: absolute;
+				left: 169px;
+				bottom: 220px;
+				z-index: 2;
+				transform: scale(0);
+			}
+			#word1{
+				position: absolute;
+				left: 338px;
+				bottom: 220px;
+				z-index: 3;
+				transform: scale(0);
+			}
+			#word7{
+				position: absolute;
+				left: 381px;
+				bottom: 220px;
+				z-index: 4;
+				transform: scale(0);
+			}
+			.header{
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 10;
+			}
+			.zhuazim{
+				position: absolute;
+				top:-980px;
+				left: 250px;
+				z-index: 5;
+			}
+			.zhuazi{
+				position: absolute;
+				left: 210px;
+				top:0;
+				z-index: 7;
+			}
+			.m{
+				position: absolute;
+				left: 0;
+				top:580px;
+				z-index: 5;
+			}
+			#lianzileft{
+				position: absolute;
+				left: 47px;
+				bottom:313px;
+				z-index: 2;
+				opacity: 0;
+			}
+			#lianziright{
+				position: absolute;
+				right:51px;
+				bottom:342px;
+				z-index: 2;
+				opacity: 0;
+			}
+			#xia{
+				position: absolute;
+				bottom: 58px;
+				left: 448px;;
+			}
+			/*第二页*/
+			#box2{
+				height: 1821px;
+				width:1024px;
+				background: url(images/page1_top2.png) no-repeat 0 0,url(images/page2_bg.png) no-repeat;
+				position: relative;
+				overflow: hidden;
+			}
+			.zuanshi1{
+				position: absolute;
+				top:253px;
+				left:453px;
+			}
+			.zuanshi2{
+				position: absolute;
+				top:439px;
+				left:453px;
+			}
+			.zuanshi3{
+				position: absolute;
+				top:545px;
+				right:105px;
+			}
+			.zuanshi4{
+				position: absolute;
+				top:253px;
+				left:453px;
+			}
+			.zuanshi5{
+				position: absolute;
+				top:635px;
+				left:47px;
+			}
+			.zuanshi6{
+				position: absolute;
+				bottom:572px;
+				left:748px;
+			}
+			.zuanshi7{
+				position: absolute;
+				bottom:724px;
+				left:465px;
+			}
+			.ta{
+				position: absolute;
+				top:178px;
+				left:282px;
+			}
+			#page2_word{
+				position: absolute;
+				left: 69px;
+				top:381px;
+				overflow: hidden;
+				width:0;
+			}
+			#miaowei{
+				position: absolute;
+				bottom:477px;
+				left:324px;
+				opacity: 0;
+			}
+			#page2_border_bottom{
+				height: 10px;
+				background: #fff;
+				width:0px;
+				position: absolute;
+				left: 512px;
+				bottom:192px;
+			}
+			#page2_border_right{
+				background: #fff;
+				width: 10px;
+				height: 0px;
+				position: absolute;
+				right: 117px;
+				bottom:202px;
+			}
+			#page2_border_left{
+				background: #fff;
+				width: 10px;
+				height: 0px;
+				position: absolute;
+				left: 117px;
+				bottom:202px;
+			}
+			#page2_border_topleft{
+				background: #fff;
+				height: 10px;
+				width:0px;
+				position: absolute;
+				left: 117px;
+				bottom:511px;
+			}
+			#page2_border_topright{
+				background: #fff;
+				height: 10px;
+				width:0px;
+				position: absolute;
+				right: 117px;
+				bottom:511px;
+			}
+			#bottomword{
+				width:520px;
+				height: 180px;
+				position: absolute;
+				left: 250px;
+				bottom: 255px;
+				overflow: hidden;
+			}
+			#bottomword img{
+				position: absolute;
+				left: 0;
+				top:-180px;
+			}
+			#suipian{
+				height: 80px;
+				width:80px;
+				position: absolute;
+				right: -80px;
+				bottom:400px;
+			}
+			#suipian li{
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 80px;
+				width:80px;
+				transform: rotateZ(40deg);
+			}
+			#suipian img{
+				height: 80px;
+				width:80px;
+			}
+			/*第三页*/
+			#box3{
+				height: 1821px;
+				width:1024px;
+				background: url(images/page1_top2.png) no-repeat 0 0,url(images/page3_bg.png) no-repeat;
+				position: relative;
+				overflow: hidden;
+			}
+			#gongzuoneirong{
+				position: absolute;
+				top:191px;
+				left: 47px;
+				overflow: hidden;
+				width:220px;
+				height: 369px;
+				z-index: 2;
+			}
+			#renzhitiaojian{
+				position: absolute;
+				top:801px;
+				right: 0px;
+				overflow: hidden;
+				width: 235px;
+				height: 384px;
+				z-index: 2;
+			}
+			#gongzuoneirong img{
+				position: absolute;
+				top:-285px;
+				left: 0;
+			}
+			#renzhitiaojian img{
+				position: absolute;
+				top: -285px;
+				left: 0;
+			}
+			#gongzuoneirongword{
+				height: 518px;
+				width:790px;
+				position: absolute;
+				left: 117px;
+				top:245px;
+			}
+			#gongzuoneirongword div{
+				height: 129.5px;
+				width: 79px;
+				position: absolute;
+				/*opacity: 0.5;*/
+				background: #830fb9;
+				transform-origin: left center;
+			}
+			#renzhitiaojianword{
+				height:660px;
+				width:790px;
+				position: absolute;
+				left: 117px;
+				top:862px;
+			}
+			#renzhitiaojianword div{
+				height: 110px;
+				width: 79px;
+				position: absolute;
+				background: #830fb9;
+				/*opacity: 0.5;*/
+				transform-origin: left center;
+			}
+			.page3_word1_top:after,.page3_word2_top:after{
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 10px;
+				width: 100%;
+				background:#fff;
+			}
+			.page3_word1_left:before,.page3_word2_left:before{
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 10px;
+				height: 100%;
+				background:#fff;
+			}
+			.page3_word1_right:before,.page3_word2_right:before{
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 10px;
+				height: 100%;
+				background:#fff;
+			}
+			.page3_word1_bottom:after,.page3_word2_bottom:after{
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 10px;
+				width: 100%;
+				background:#fff;
+			}
+			#gongzuoneirongul{
+				position: absolute;
+				left: 0;
+				top: 0;
+				line-height: 80px;
+				font-size: 42px;
+				color:#fff;
+				height: 460px;
+				width:732px;
+				padding-top: 58px;
+				padding-left: 58px;
+				z-index: 20;
+			}
+			#gongzuoneirongul li span{
+				display: block;
+				float:left;
+				transform-origin: left center;
+				transform: rotateY(-90deg);
+			}
+			#renzhitiaojianul{
+				position: absolute;
+				left: 0;
+				top: 0;
+				line-height: 80px;
+				font-size: 42px;
+				color:#fff;
+				height:602px;
+				widows: 732px;px;
+				padding-top: 58px;
+				padding-left: 58px;
+				z-index: 20;
+			}
+			#renzhitiaojianul li span{
+				display: block;
+				float:left;
+				transform-origin: left center;
+				transform: rotateY(-90deg);
+			}
+			/*第四页*/
+			#box4{
+				height: 1821px;
+				width:1024px;
+				background: url(images/page1_top2.png) no-repeat 0 0,url(images/page4_bg.png) no-repeat 0 175px;
+				position: relative;
+				overflow: hidden;
+			}
+			#page4_spall{
+				height: 1821px;
+				width:1024px;
+				position: absolute;
+				top:1821px;
+				left: 0;
+			}
+			#page4_spall img{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			#page4_wenzi{
+				position: absolute;
+				left: 75px;
+				bottom:258px;
+				height: 852px;
+				width:874px;
+			}
+			#page4_word1 div,#page4_word2 div,#page4_word3 div,#page4_word4 div,#page4_word5 div,#page4_word6 div,#page4_word7 div,#page4_word8 div,#page4_word9 div,#page4_word10 div{
+				height: 85.2px;
+				width:87.4px;
+				background: #b9264d;
+				opacity: 0.8;
+				position: absolute;
+				transform: rotateY(-90deg);
+				transform-origin: left;
+			}
+			.page4_top:after{
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 10px;
+				width: 100%;
+				background:#fff;
+			}
+			.page4_left:before{
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 10px;
+				height: 100%;
+				background:#fff;
+			}
+			.page4_right:before{
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 10px;
+				height: 100%;
+				background:#fff;
+			}
+			.page4_bottom:after{
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 10px;
+				width: 100%;
+				background:#fff;
+			}
+			#page4_wenzi2{
+				position: absolute;
+				z-index: 3;
+				left: 0;
+				top: 0;
+				height: 846px;
+				width:796px;
+				line-height: 94px;
+				font-size: 48px;
+				color:#fff;
+				padding-left: 78px;
+				padding-top: 46px;
+			}
+			#page4_wenzi2 li{
+				height: 94px;
+				width: 100%;
+				transform: rotateY(-90deg);
+				transform-origin: left center;
+			}
+			/*第五页*/
+			#box5{
+				height: 1821px;
+				width:1024px;
+				background: url(images/page1_top2.png) no-repeat 0 0,url(images/page5_bg.png) no-repeat 0 175px;
+				position: relative;
+				overflow: hidden;
+			}
+			.qiu1{
+				position: absolute;
+				left: 322px;
+				top: 357px;
+				animation: move 4s linear infinite;
+				z-index: 1;
+			}
+			.qiu2{
+				position: absolute;
+				right: 73px;
+				top: 349px;
+				animation: move 4s linear infinite;
+				z-index: 1;
+			}
+			.qiu3{
+				position: absolute;
+				left: 80px;
+				top: 808px;
+				animation: move 4s linear infinite;
+				z-index: 1;
+			}
+			.qiu4{
+				position: absolute;
+				right: 536px;
+				top: 867px;
+				animation: move 4s linear infinite;
+				z-index: 1;
+			}
+			.qiu5{
+				position: absolute;
+				right:124px;
+				bottom: 492px;
+				animation: move 4s linear infinite;
+				z-index: 1;
+			}
+			.page5_wordall{
+				width:942px;
+				height: 341px;
+				position: absolute;
+				left: 82px;
+				bottom:101px;
+			}
+			.erweima{
+				float: left;
+			}
+			.page5_word{
+				float:left;
+				height: 321px;
+				width: 555px;
+				padding: 20px 0px 0px 46px;
+				line-height: 90px;
+				font-size: 44px;
+				color:#fff;
+			}
+			.page5_xian{
+				position: absolute;
+				left: -150px;
+				top:131px;
+				z-index: 0;
+			}
+			@keyframes move{
+				0%{
+					transform: translateY(0px);
+				}
+				25%{
+					transform: translateY(-20px);
+				}
+				50%{
+					transform: translateY(0px);
+				}
+				75%{
+					transform: translateY(20px);
+				}
+				100%{
+					transform: translateY(0px);
+				}
+			}
+			#page5_jianli{
+				position: absolute;
+				left: 98px;
+				top:484px;
+				height: 424px;
+				width:828px;
+				animation: move 4s linear infinite;
+			}
+			#page5_wenzi{
+				position: absolute;
+				left: 50px;
+				top: 80px;
+				z-index: 2;
+				opacity: 0;
+				animation: move 4s linear infinite;
+			}
+			#page5_word1 div,#page5_word2 div,#page5_word3 div,#page5_word4 div{
+				height: 106px;
+				width:82.8px;
+				background: #1e8b52;
+				opacity: 0.8;
+				position: absolute;
+				transform: rotateY(-90deg);
+				transform-origin: left;
+			}
+			.page5_top:after{
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 10px;
+				width: 100%;
+				background:#fff;
+			}
+			.page5_left:before{
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 10px;
+				height: 100%;
+				background:#fff;
+			}
+			.page5_right:before{
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 10px;
+				height: 100%;
+				background:#fff;
+			}
+			.page5_bottom:after{
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 10px;
+				width: 100%;
+				background:#fff;
+			}
+		</style>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/swiper.js" ></script>
+	</head>
+	<body>
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		    	<!--第一屏-->
+				<div id="box1" class="swiper-slide">
+					<div class="header"><img src="images/page1_top2.png"/></div>
+					<div class="people1"><img src="images/page1_renleft.png"/></div>
+					<div class="people2"><img src="images/page1_renright.png"/></div>
+					<div class="people3"><img src="images/page1_rentop.png"/></div>
+					<div class="chilun1"><img src="images/page1_chilunbig2.png" id="chilun1"/></div>
+					<div class="chilun2"><img src="images/page1_chilunsmall2.png" id="chilun2"></div>
+					<div class="chilun3"><img src="images/page1_chilunbig3.png" id="chilun3"/></div>
+					<div class="chilun4"><img src="images/page1_chilunbig1.png" id="chilun4"/></div>
+					<div class="chilun5"><img src="images/page1_chilunright.png" id="chilun5"/></div>
+					<div class="chilun6"><img src="images/page1_chilunsmall1.png" id="chilun6"/></div>
+					<div class="chilun7"><img src="images/page1_chilunbottom.png" id="chilun7"/></div>
+					<div class="chilun8"><img src="images/page1_chilunsmall3.png" id="chilun8"/></div>
+					<div class="yuan"><img src="images/page1_yuan.png"/></div>
+					<div class="xian1"><img src="images/page1_xiantop.png"/></div>
+					<div class="xian2"><img src="images/page1_xianbottom.png"/></div>
+					<div class="ball1"><img src="images/page1_ballleft.png"/></div>
+					<div class="ball2"><img src="images/page1_ballbig.png"/></div>
+					<div class="ball3"><img src="images/page1_ballsmall.png"/></div>
+					<div class="ball4"><img src="images/page1_bollrght.png"/></div>
+					<div class="ball5"><img src="images/page1_balltop2.png"/></div>
+					<div class="ball6"><img src="images/page1_balltop2.png"/></div>
+					<div class="ball7"><img src="images/page1_balltop.png"/></div>
+					<div class="ball8"><img src="images/page1_ballfei.png"/></div>
+					<div class="zhalan" id="zhalan">
+						<img src="images/page1_top.png"/>
+						<img src="images/page1_word.png" id="word"/>
+						<img src="images/page1_2.png" id="word2"/>
+						<img src="images/page1_0.png" id="word0"/>
+						<img src="images/page1_1.png" id="word1"/>
+						<img src="images/page1_7.png" id="word7"/>
+					</div>
+					<div class="zhuazim" id="zhuazim">
+						<div class="zhuazi"><img src="images/page1_hand.png" id="zhuazi"/></div>
+						<div class="m">
+							<img src="images/page1_M.png" id="m"/>
+						</div>
+					</div>
+					<img src="images/page1_lianzileft.png" id="lianzileft"/>
+					<img src="images/page1_lianziright.png" id="lianziright"/>
+					<img src="images/page1_xia.png" id="xia"/>
+				</div>
+				<!--第二屏-->
+				<div id="box2"  class="swiper-slide">
+					<div class="zuanshi1"><img src="images/page2_zuanshitopbig.png"/></div>
+					<div class="zuanshi2"><img src="images/page2_zuanshitop.png"/></div>
+					<div class="zuanshi3"><img src="images/page2_zuanshitopbig2.png"/></div>
+					<div class="zuanshi5"><img src="images/page2_zuanshileft.png"/></div>
+					<div class="zuanshi6"><img src="images/page2_zuanshiright.png"/></div>
+					<div class="zuanshi7"><img src="images/page2_zuanshimiddle.png"/></div>
+					<div class="ta"><img src="images/page2_ta.png"/></div>
+					<div id="page2_word">
+						<img src="images/page2_word.png"/>
+					</div>
+					<img src="images/page1_xia.png" id="xia"/>
+					<div id="miaowei"><img src="images/page2_miaova.png"/></div>
+					<div id="page2_border_bottom"></div>
+					<div id="page2_border_left"></div>
+					<div id="page2_border_right"></div>
+					<div id="page2_border_topleft"></div>
+					<div id="page2_border_topright"></div>
+					<div id="bottomword">
+						<img src="images/page2_word2.png" id="bottomimg"/>
+					</div>
+					<div id="suipian"></div>
+				</div>
+				<!--第三屏-->
+				<div class="swiper-slide" id="box3">
+					<div id="gongzuoneirong"><img src="images/page3_wordneirong.png" id="gongzuoneirongimg"/></div>
+					<div id="gongzuoneirongword">
+						<ul id="gongzuoneirongul">
+							<li class="clearfix"></li>
+							<li class="clearfix"></li>
+							<li class="clearfix"></li>
+							<li class="clearfix"></li>
+							<li class="clearfix"></li>
+						</ul>
+					</div>
+					<div id="renzhitiaojian"><img src="images/page3_tiaojian.png" id="renzhitiaoojianimg"/></div>
+					<div id="renzhitiaojianword">
+						<ul id="renzhitiaojianul">
+							<li class="clearfix"></li>
+							<li class="clearfix"></li>
+							<li class="clearfix"></li>
+							<li class="clearfix"></li>
+							<li class="clearfix"></li>
+							<li class="clearfix"></li>
+							<li class="clearfix"></li>
+						</ul>
+					</div>
+					<img src="images/page1_xia.png" id="xia"/>
+				</div>
+				<!--第四屏-->
+				<div class="swiper-slide" id="box4">
+					<div id="page4_spall">
+						<div id="page4_sp1"><img src="images/page4_sp1.png"/></div>
+						<div id="page4_sp2"><img src="images/page4_sp12.png"/></div>
+						<div id="page4_sp3"><img src="images/page4_sp3.png"/></div>
+						<div id="page4_sp4"><img src="images/page4_sp13.png"/></div>
+						<div id="page4_sp5"><img src="images/page4_sp5.png"/></div>
+						<div id="page4_sp6"><img src="images/page4_sp6.png"/></div>
+						<div id="page4_sp7"><img src="images/page4_sp3.png"/></div>
+						<div id="page4_sp8"><img src="images/page4_sp4.png"/></div>
+						<div id="page4_sp9"><img src="images/page4_sp5.png"/></div>
+						<div id="page4_sp10"><img src="images/page4_sp6.png"/></div>
+						<div id="page4_sp11"><img src="images/page4_sp7.png"/></div>
+						<div id="page4_sp12"><img src="images/page4_sp7.png"/></div>
+						<div id="page4_sp13"><img src="images/page4_sp1.png"/></div>
+						<div id="page4_sp14"><img src="images/page4_sp8.png"/></div>
+						<div id="page4_sp15"><img src="images/page4_sp5.png"/></div>
+						<div id="page4_sp16"><img src="images/page4_sp9.png"/></div>
+						<div id="page4_sp17"><img src="images/page4_sp8.png"/></div>
+						<div id="page4_sp18"><img src="images/page4_sp10.png"/></div>
+						<div id="page4_sp19"><img src="images/page4_sp11.png"/></div>
+						<div id="page4_sp20"><img src="images/page4_sp7.png"/></div>
+						<div id="page4_sp21"><img src="images/page4_sp12.png"/></div>
+						<div id="page4_sp22"><img src="images/page4_sp5.png"/></div>
+						<div id="page4_sp23"><img src="images/page4_sp13.png"/></div>
+						<div id="page4_sp24"><img src="images/page4_sp3.png"/></div>
+					</div>
+					<img src="images/page1_xia.png" id="xia"/>
+					<div id="page4_wenzi">
+						<ul id="page4_wenzi2">
+							<li>妙味课堂是北京资深的前端开</li>
+							<li>发培训机构，妙味课堂拥有系统</li>
+							<li>的JavaScript、HTML5、CSS3</li>
+							<li>、移动开发、远程培训等课程，</li>
+							<li>并录制成最系统的前端开发视频</li>
+							<li>教程，妙味课堂推出VIP前端学</li>
+							<li>习平台已经成为学习氛围最浓郁</li>
+							<li>的前端学习圈。</li>
+						</ul>
+					</div>
+				</div>
+				<!--第五屏-->
+				<div class="swiper-slide" id="box5">
+					<div class="qiu1"><img src="images/page5_qiu1.png"/></div>
+					<div class="qiu2"><img src="images/page5_qiu2.png"/></div>
+					<div class="qiu3"><img src="images/page5_qiu3.png"/></div>
+					<div class="qiu4"><img src="images/page5_qiu4.png"/></div>
+					<div class="qiu5"><img src="images/page5_qiu5.png"/></div>
+					<div class="page5_wordall">
+						<div class="erweima"><img src="images/page5_erweima.png"/></div>
+						<div class="page5_word">
+							<p>更多信息请访问妙味官网</p>
+							<p>www.miaov.com</p>
+							<p>扫码关注妙味课堂</p>
+						</div>
+					</div>
+					<div class="page5_xian"><img src="images/page5_xian.png"/></div>
+					<div id="page5_jianli">
+						<img src="images/page5_wenzi.png" id="page5_wenzi"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var box1 = document.getElementById('box1');
+			var box2 = document.getElementById('box2');
+			var box3 = document.getElementById('box3');
+			var box4 = document.getElementById('box4');
+			var box5 = document.getElementById('box5');
+			var num = 0;
+			var t = new TimelineMax();
+			var t2 = new TimelineMax();
+			var t3 = new TimelineMax();
+			var t4 = new TimelineMax();
+			var t5 = new TimelineMax();
+			var t6 = new TimelineMax();
+			var t7 = new TimelineMax();
+			var t8 = new TimelineMax();
+			var t9 = new TimelineMax();
+			var t10 = new TimelineMax();
+			var t11 = new TimelineMax();
+			var t12 = new TimelineMax();
+			var t13 = new TimelineMax();
+			var t14 = new TimelineMax();
+			var zhalan = document.getElementById('zhalan');
+			var zhuazim = document.getElementsByClassName('zhuazim')[0];
+			var zhuazi = document.getElementById('zhuazi');
+			var mySwiper = new Swiper ('.swiper-container', {
+			    direction: 'horizontal',
+//			    effect : "coverflow",
+			    onSlideChangeEnd : function(){
+//			    	console.log(mySwiper.activeIndex);
+			    	if(mySwiper.activeIndex==0){
+			    		oneAnimate.init();
+			    	}
+			    	if(mySwiper.activeIndex==1){
+			    		twoAnimate.init();
+			    	}
+			    	if(mySwiper.activeIndex==2){
+			    		threeAnimate.init();
+			    	}
+			    	if(mySwiper.activeIndex==3){
+			    		fourAnimate.init();
+			    	}
+			    	if(mySwiper.activeIndex==4){
+			    		fiveAnimate.init();
+			    	}
+			  	}
+			})
+			var oneAnimate = {};
+			oneAnimate.init = function(){
+				box1.className = 'swiper-slide swiper-no-swiping';
+				t.to( "#chilun1",0,{
+					rotation : 0,
+					ease : Linear.easeIn ,
+				}),
+				t2.to( "#chilun2",0,{
+					rotation : 0,
+					ease : Linear.easeIn ,
+				}),
+				t3.to( "#chilun3",0,{
+					rotation : 0,
+					ease : Linear.easeIn ,
+				}),
+				t4.to( "#chilun4",0,{
+					rotation : 0,
+					ease : Linear.easeIn ,
+				}),
+				t5.to( "#chilun5",0,{
+					rotation : 0,
+					ease : Linear.easeIn ,
+				}),
+				t6.to( "#chilun6",0,{
+					rotation : 0,
+					ease : Linear.easeIn ,
+				}),
+				t7.to( "#chilun7",0,{
+					rotation : 0,
+					ease : Linear.easeIn ,
+				}),
+				t8.to( "#chilun8",0,{
+					rotation : 0,
+					ease : Linear.easeIn ,
+				}),
+				t9.to( "#zhalan",0,{
+					y:0,
+					ease : Bounce.easeOut ,
+				}),
+				t9.to( "#word2",0,{
+					scale : 0,
+					ease : Bounce.easeOut ,
+				}),
+				t9.to( "#word0",0,{
+					scale : 0,
+					ease : Bounce.easeOut ,
+				}),
+				t9.to( "#word1",0,{
+					scale : 0,
+					ease : Bounce.easeOut ,
+				}),
+				t9.to( "#word7",0,{
+					scale : 0,
+					ease : Bounce.easeOut ,
+				}),
+				t9.to( "#zhuazim",0,{
+					y:0,
+					ease : Linear.easeIn ,
+				}),
+				t9.to( "#m",0,{
+					y:0,
+					ease : Bounce.easeOut ,
+				}),
+				t9.to( "#lianzileft",0,{
+					opacity : 0,
+					ease : Linear.easeIn ,
+				}),
+				t9.to( "#lianziright",0,{
+					opacity : 0,
+					ease : Linear.easeIn ,
+				}),
+				t9.to( "#zhuazi",0,{
+					x:0,
+					ease : Linear.easeIn ,
+				}),
+//				zhalan.style.transform = 'matrix(1,0,0,1,0,-752)';
+//			    zhuazim.style.transform = 'matrix(1,0,0,1,0,-980)';
+//			    zhuazi.style.transform = 'matrix(1,0,0,1,210,0)';
+				t.to( "#chilun1",5,{
+					rotation : 360,
+					ease : Linear.easeIn ,
+				}),
+				t2.to( "#chilun2",5,{
+					rotation : -360,
+					ease : Linear.easeIn ,
+				}),
+				t3.to( "#chilun3",5,{
+					rotation : 360,
+					ease : Linear.easeIn ,
+				}),
+				t4.to( "#chilun4",5,{
+					rotation : -360,
+					ease : Linear.easeIn ,
+				}),
+				t5.to( "#chilun5",5,{
+					rotation : -360,
+					ease : Linear.easeIn ,
+				}),
+				t6.to( "#chilun6",5,{
+					rotation : -360,
+					ease : Linear.easeIn ,
+				}),
+				t7.to( "#chilun7",5,{
+					rotation : -360,
+					ease : Linear.easeIn ,
+				}),
+				t8.to( "#chilun8",5,{
+					rotation : -360,
+					ease : Linear.easeIn ,
+				}),
+				t9.to( "#zhalan",3,{
+					y:752,
+					ease : Bounce.easeOut ,
+				}),
+				t9.to( "#word2",0.5,{
+					scale : 1,
+					ease : Bounce.easeOut ,
+				},"-=0.5"),
+				t9.to( "#word0",0.5,{
+					scale : 1,
+					ease : Bounce.easeOut ,
+				}),
+				t9.to( "#word1",0.5,{
+					scale : 1,
+					ease : Bounce.easeOut ,
+				}),
+				t9.to( "#word7",0.5,{
+					scale : 1,
+					ease : Bounce.easeOut ,
+				}),
+				t9.to( "#zhuazim",2,{
+					y:980,
+					ease : Linear.easeIn ,
+				}),
+				t9.to( "#m",2,{
+					y:300,
+					ease : Bounce.easeOut ,
+				}),
+				t9.to( "#lianzileft",0.1,{
+					opacity : 1,
+					ease : Linear.easeIn ,
+				}),
+				t9.to( "#lianziright",0.1,{
+					opacity : 1,
+					ease : Linear.easeIn ,
+				}),
+				t9.to( "#zhuazi",1,{
+					x:400,
+					ease : Linear.easeIn ,
+					onComplete : function(){
+						box1.className = 'swiper-slide';
+					},
+				})
+				t10.to( "#word2",1,{
+					y : 15 ,
+					ease : Linear.easeIn ,
+				}),
+				t10.to( "#word2",1,{
+					y : 0 ,
+					ease : Linear.easeIn ,
+				}),
+				t11.to( "#word0",1,{
+					y : -15 ,
+					ease : Linear.easeIn ,
+				}),
+				t11.to( "#word0",1,{
+					y : 0 ,
+					ease : Linear.easeIn ,
+				}),
+				t12.to( "#word1",1,{
+					y : 15 ,
+					ease : Linear.easeIn ,
+				}),
+				t12.to( "#word1",1,{
+					y : 0 ,
+					ease : Linear.easeIn ,
+				}),
+				t13.to( "#word7",1,{
+					y : -15 ,
+					ease : Linear.easeIn ,
+				}),
+				t13.to( "#word7",1,{
+					y : 0 ,
+					ease : Linear.easeIn ,
+				}),
+				t14.to( "#xia",1,{
+					y : 20 ,
+					ease : Linear.easeIn ,		
+				}),
+				t14.to( "#xia",1,{
+					y : 0 ,
+					ease : Linear.easeIn ,
+				}),
+				t.repeat( -1 );
+				t2.repeat( -1 );
+				t3.repeat( -1 );
+				t4.repeat( -1 );
+				t5.repeat( -1 );
+				t6.repeat( -1 );
+				t7.repeat( -1 );
+				t8.repeat( -1 );
+				t10.repeat( -1 );
+				t11.repeat( -1 );
+				t12.repeat( -1 );
+				t13.repeat( -1 );
+				t14.repeat( -1 );
+//				console.log(t9.totalDuration());
+			}
+//			
+			oneAnimate.init();
+			
+
+			//第二屏
+			var page2t1 = new TimelineMax();
+			var page2t2 = new TimelineMax();
+			var page2t3 = new TimelineMax();
+			var page2t4 = new TimelineMax();
+			var suipian = document.getElementById('suipian');
+			var lis = suipian.getElementsByTagName('li');
+			for(var i=0;i<100;i++){
+				suipian.innerHTML += '<li><img src="images/page2_zuanshitop.png"></li>';
+			}
+			var twoAnimate = {};
+			twoAnimate.init = function(){
+				box2.className = 'swiper-slide swiper-no-swiping';
+				page2t2.to("#page2_word",0,{
+					ease : Linear.easeInOut,
+					width : 0,
+				})
+				page2t1.staggerTo(lis,0,{
+					x:0,
+					y:0,
+				})
+				page2t2.to("#page2_word",0,{
+					ease : Linear.easeInOut,
+					width : 0,
+				})
+				page2t1.to("#page2_border_bottom",0,{
+					width :0,
+					x:-0,
+					ease : Linear.easeIn ,
+				})
+				page2t1.to("#page2_border_left,#page2_border_right",0,{
+					height :0,
+					ease : Linear.easeIn ,
+				})
+				page2t1.to("#page2_border_topleft,#page2_border_topright",0,{
+					width:0,
+					ease : Linear.easeIn ,
+				})
+				page2t1.to("#miaowei",0,{
+					opacity : 0,
+					ease : Linear.easeIn ,
+				})
+				page2t1.to("#bottomimg",0,{
+					y : 0,
+					ease : Linear.easeIn ,
+				})
+				page2t1.staggerTo(lis,3,{
+					ease : Linear.easeInOut,
+					cycle : {
+						rotation : function(i){
+							return 1.666666*i
+						},
+						rotationY : function(i){
+							return randomFn(-45,45)
+						},
+						rotationX : function(i){
+							return randomFn(-45,45)
+						},
+						bezier : function(){
+						return [
+							{x:0,y:0},
+							{x:-randomFn(300,600),y:randomFn(200,400)},
+							{x:-randomFn(400,800),y:randomFn(100,300)},
+							{x:-randomFn(600,1000),y:randomFn(-600,-400)},
+							{x:-randomFn(300,600),y:randomFn(-1400,-1000)},
+							{x:-randomFn(100,400),y:randomFn(-500,-200)},
+							{x:-randomFn(300,600),y:randomFn(-200,0)},
+							{x:-randomFn(200,900),y:randomFn(-900,-200)},
+							]
+						},
+					},
+					onComplete : function(){
+						this.target.style.transform = 'rotateY(90deg)';
+					},
+				},0.01)
+				setTimeout(function(){
+					page2t2.to("#page2_word",1.5,{
+						ease : Linear.easeInOut,
+						width : 900,
+					})
+				},3000)
+				page2t1.to("#page2_border_bottom",1,{
+					width :790,
+					x:-395,
+					ease : Linear.easeIn ,
+				})
+				page2t1.to("#page2_border_left,#page2_border_right",1,{
+					height :309,
+					ease : Linear.easeIn ,
+				})
+				page2t1.to("#page2_border_topleft,#page2_border_topright",1,{
+					width:185,
+					ease : Linear.easeIn ,
+				})
+				page2t1.to("#miaowei",0.5,{
+					opacity : 1,
+					ease : Linear.easeIn ,
+				})
+				page2t1.to("#bottomimg",0.5,{
+					y : 180,
+					ease : Linear.easeIn ,
+					onComplete : function(){
+						box2.className = 'swiper-slide';
+					},
+				})
+			}
+			
+			
+			//第三屏
+			var page3t1 = new TimelineMax();
+			var gongzuoneirongword = document.getElementById('gongzuoneirongword');
+			var gongzuodivs = gongzuoneirongword.getElementsByTagName('div');
+			var renzhitiaojianword = document.getElementById('renzhitiaojianword');
+			var renzhidivs = renzhitiaojianword.getElementsByTagName('div');
+			var str = '';
+			var str2 = '';
+			
+			str = '<div class="page3_word1_top page3_word1_left" style="left:0;top:0;">';
+			for(var i=1;i<9;i++){
+				str += '<div class="page3_word1_top" style="left:79px;top:0;">';
+			}
+			str += '<div class="page3_word1_top page3_word1_right" style="left:79px;top:0;"><div class="page3_word1_right" style="left:0px;top:129.5px;">';
+			for(var i=9;i>1;i--){
+				str += '<div style="left:-79px;top:0;">';
+			}
+			str += '<div class="page3_word1_left" style="left:-79px;top:0px"><div class="page3_word1_left" style="left:0px;top:129.5px;">';
+			for(var i=1;i<9;i++){
+				str += '<div style="left:79px;top:0">';
+			}
+			str += '<div class="page3_word1_right" style="left:79px;top:0px"><div class="page3_word1_bottom page3_word1_right" style="left:0;top:129.5px;">';
+			for(var i=9;i>1;i--){
+				str += '<div class="page3_word1_bottom" style="left:-79px;top:0;">';
+			}
+			str += '<div class="page3_word1_bottom page3_word1_left" style="left:-79px;top:0;">';
+			for(var i=0;i<40;i++){
+				str += '</div>';
+			}
+			gongzuoneirongword.innerHTML += str;
+			
+			str2 = '<div class="page3_word2_top page3_word2_left" style="left:0;top:0;">';
+			for(var i=1;i<9;i++){
+				str2 += '<div class="page3_word2_top" style="left:79px;top:0;">';
+			}
+			str2 += '<div class="page3_word2_top page3_word2_right" style="left:79px;top:0;"><div class="page3_word2_right" style="left:0px;top:110px;">';
+			for(var i=9;i>1;i--){
+				str2 += '<div style="left:-79px;top:0;">';
+			}
+			str2 += '<div class="page3_word2_left" style="left:-79px;top:0px"><div class="page3_word2_left" style="left:0px;top:110px;">';
+			for(var i=1;i<9;i++){
+				str2 += '<div style="left:79px;top:0">';
+			}
+			str2 += '<div class="page3_word2_right" style="left:79px;top:0px"><div class="page3_word2_right" style="left:0px;top:110px;">';
+			for(var i=9;i>1;i--){
+				str2 += '<div style="left:-79px;top:0">';
+			}
+			str2 += '<div class="page3_word2_left" style="left:-79px;top:0px"><div class="page3_word2_left" style="left:0px;top:110px;">';
+			for(var i=1;i<9;i++){
+				str2 += '<div style="left:79px;top:0">';
+			}
+			str2 += '<div class="page3_word2_right" style="left:79px;top:0px"><div class="page3_word2_bottom page3_word2_right" style="left:0;top:110px;">';
+			for(var i=9;i>1;i--){
+				str2 += '<div class="page3_word2_bottom" style="left:-79px;top:0;">';
+			}
+			str2 += '<div class="page3_word2_bottom page3_word2_left" style="left:-79px;top:0;">';
+			for(var i=0;i<40;i++){
+				str2 += '</div>';
+			}
+			renzhitiaojianword.innerHTML += str2;
+			var gongzuoneirongul = document.getElementById('gongzuoneirongul');
+			var renzhitiaojianul = document.getElementById('renzhitiaojianul');
+			var gongzuoneironglis = gongzuoneirongul.getElementsByTagName('li');
+			var renzhitiaojianlis = renzhitiaojianul.getElementsByTagName('li');
+			var gongzuoneirongarr1 = ['1','.','定','制','I','T','课','程','相','关','的','创','意','活','动','策','划',';'];
+			var gongzuoneirongarr2 = ['2','.','言','之','有','物',',','诉','求','精','准','的','文','案','撰','写',';'];
+			var gongzuoneirongarr3 = ['3','.','严','谨','有','序','的','资','源','安','排',',','人','员','部','署',';'];
+			var gongzuoneirongarr4 = ['4','.','坚','定','地','执','行','力','!','!'];
+			var gongzuoneirongarr5 = ['5','.','为','结','果','负','责','.'];
+			var renzhitiaojianarr1 = ['1','.','三','年','以','上','I','T','产','品','或','服','务','经','营','经'];
+			var renzhitiaojianarr2 = ['验',',','有','成','功','运','作','案','例',';'];
+			var renzhitiaojianarr3 = ['2','.','永','远','保','持','紧','迫','感','与','危','机','意','识',',','有'];
+			var renzhitiaojianarr4 = ['方','法','论','、','有','信','心',';'];
+			var renzhitiaojianarr5 = ['3','.','2','4','岁','以','上',',','社','会','阅','历','丰','富',';'];
+			var renzhitiaojianarr6 = ['4','.','熟','悉','“','前','端','开','发','”','行','业',',','对','社','群'];
+			var renzhitiaojianarr7 = ['运','营','有','一','定','心','得','体','会',';'];
+			for(var i=0;i<gongzuoneirongarr1.length;i++){
+				gongzuoneironglis[0].innerHTML += '<span>'+gongzuoneirongarr1[i]+'</span>';
+			}
+			for(var i=0;i<gongzuoneirongarr2.length;i++){
+				gongzuoneironglis[1].innerHTML += '<span>'+gongzuoneirongarr2[i]+'</span>';
+			}
+			for(var i=0;i<gongzuoneirongarr3.length;i++){
+				gongzuoneironglis[2].innerHTML += '<span>'+gongzuoneirongarr3[i]+'</span>';
+			}
+			for(var i=0;i<gongzuoneirongarr4.length;i++){
+				gongzuoneironglis[3].innerHTML += '<span>'+gongzuoneirongarr4[i]+'</span>';
+			}
+			for(var i=0;i<gongzuoneirongarr5.length;i++){
+				gongzuoneironglis[4].innerHTML += '<span>'+gongzuoneirongarr5[i]+'</span>';
+			}
+			for(var i=0;i<renzhitiaojianarr1.length;i++){
+				renzhitiaojianlis[0].innerHTML += '<span>'+renzhitiaojianarr1[i]+'</span>';
+			}
+			for(var i=0;i<renzhitiaojianarr2.length;i++){
+				renzhitiaojianlis[1].innerHTML += '<span>'+renzhitiaojianarr2[i]+'</span>';
+			}
+			for(var i=0;i<renzhitiaojianarr3.length;i++){
+				renzhitiaojianlis[2].innerHTML += '<span>'+renzhitiaojianarr3[i]+'</span>';
+			}
+			for(var i=0;i<renzhitiaojianarr4.length;i++){
+				renzhitiaojianlis[3].innerHTML += '<span>'+renzhitiaojianarr4[i]+'</span>';
+			}
+			for(var i=0;i<renzhitiaojianarr5.length;i++){
+				renzhitiaojianlis[4].innerHTML += '<span>'+renzhitiaojianarr5[i]+'</span>';
+			}
+			for(var i=0;i<renzhitiaojianarr6.length;i++){
+				renzhitiaojianlis[5].innerHTML += '<span>'+renzhitiaojianarr6[i]+'</span>';
+			}
+			for(var i=0;i<renzhitiaojianarr7.length;i++){
+				renzhitiaojianlis[6].innerHTML += '<span>'+renzhitiaojianarr7[i]+'</span>';
+			}
+			var threeAnimate = {};
+			threeAnimate.init = function(){
+				box3.className = 'swiper-slide swiper-no-swiping';
+				page3t1.to("#gongzuoneirongimg",0,{
+					y : 0,
+				})
+				page3t1.to("#renzhitiaoojianimg",0,{
+					y : 0,
+				})
+				page3t1.staggerTo(gongzuodivs,0,{
+					rotationY : -90,
+				})
+				page3t1.staggerTo(renzhidivs,0,{
+					rotationY : -90,
+				})
+				page3t1.staggerTo("#gongzuoneirongul li span",0,{
+					rotationY : -90,
+					scale : 0,
+				})
+				page3t1.staggerTo("#renzhitiaojianul li span",0,{
+					rotationY : -90,
+					scale : 0,
+				})
+				page3t1.to("#gongzuoneirongimg",1,{
+					y : 285,
+					ease : Bounce.easeOut ,
+				})
+				page3t1.staggerTo(gongzuodivs,1,{
+					rotationY : 0,
+				},0.1)
+				page3t1.staggerTo("#gongzuoneirongul li span",1,{
+					rotationY : 0,
+					scale : 1,
+				},0.05)
+				page3t1.to("#renzhitiaoojianimg",1,{
+					y : 285,
+					ease : Bounce.easeOut ,
+				})
+				page3t1.staggerTo(renzhidivs,1,{
+					rotationY : 0,
+				},0.1)
+				page3t1.staggerTo("#renzhitiaojianul li span",1,{
+					rotationY : 0,
+					scale : 1,
+					onComplete : function(){
+						box3.className = 'swiper-slide';
+					},
+				},0.05)
+			}
+			
+			
+			//第四屏
+			var page4_spall = document.getElementById('page4_spall');
+			var page4_spalldivs = page4_spall.getElementsByTagName('img');
+			var page4_wenzi = document.getElementById('page4_wenzi');
+			for(var i=0;i<page4_spalldivs.length;i++){
+				page4_spalldivs[i].style.left = randomFn(0,1000)+'px';
+				page4_spalldivs[i].style.top = randomFn(0,1800)+'px';
+			}
+			var page4t1 = new TimelineMax();
+			var str_page4 = '';
+			var str2_page4 = '';
+			var str3_page4 = '';
+			var str4_page4 = '';
+			var str5_page4 = '';
+			var str6_page4 = '';
+			var str7_page4 = '';
+			var str8_page4 = '';
+			var str9_page4 = '';
+			var str10_page4 = '';
+			var page4t2 = new TimelineMax();
+			var page4t3 = new TimelineMax();
+			var page4t4 = new TimelineMax();
+			var page4t5 = new TimelineMax();
+			var page4t6 = new TimelineMax();
+			var page4t7 = new TimelineMax();
+			var page4t8 = new TimelineMax();
+			var page4t9 = new TimelineMax();
+			var page4t10 = new TimelineMax();
+			var page4t11 = new TimelineMax();
+			//生成文字div
+			str_page4 = '<div id="page4_word1" style="width:874px;height:85.2px;"><div class="page4_top page4_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str_page4 += '<div class="page4_top" style="left:'+((Math.floor(87.4*10*i))/10)+'px;top:0;"></div>';
+			}
+			str_page4 += '<div class="page4_top page4_right" style="left:786.6px;top:0;"></div></div>';
+			str2_page4 = '<div id="page4_word2" style="width:874px;height:85.2px;position:absolute;top:85.2px"><div class="page4_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str2_page4 += '<div style="left:'+ ((Math.floor(87.4*10*i))/10) +'px;top:0;"></div>';
+			}
+			str2_page4 += '<div class="page4_right" style="left:786.6px;top:0;"></div></div>';
+			str3_page4 = '<div id="page4_word3" style="width:874px;height:85.2px;position:absolute;top:170.4px"><div class="page4_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str3_page4 += '<div style="left:'+((Math.floor(87.4*10*i))/10)+'px;top:0;"></div>';
+			}
+			str3_page4 += '<div class="page4_right" style="left:786.6px;top:0;"></div></div>';
+			str4_page4 = '<div id="page4_word4" style="width:874px;height:85.2px;position:absolute;top:255.6px"><div class="page4_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str4_page4 += '<div style="left:'+((Math.floor(87.4*10*i))/10)+'px;top:0;"></div>';
+			}
+			str4_page4 += '<div class="page4_right" style="left:786.6px;top:0;"></div></div>';
+			str5_page4 = '<div id="page4_word5" style="width:874px;height:85.2px;position:absolute;top:340.8px"><div class="page4_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str5_page4 += '<div style="left:'+((Math.floor(87.4*10*i))/10)+'px;top:0;"></div>';
+			}
+			str5_page4 += '<div class="page4_right" style="left:786.6px;top:0;"></div></div>';
+			str6_page4 = '<div id="page4_word6" style="width:874px;height:85.2px;position:absolute;top:426px"><div class="page4_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str6_page4 += '<div style="left:'+((Math.floor(87.4*10*i))/10)+'px;top:0;"></div>';
+			}
+			str6_page4 += '<div class="page4_right" style="left:786.6px;top:0;"></div></div>';
+			str7_page4 = '<div id="page4_word7" style="width:874px;height:85.2px;position:absolute;top:511.2px"><div class="page4_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str7_page4 += '<div style="left:'+((Math.floor(87.4*10*i))/10)+'px;top:0;"></div>';
+			}
+			str7_page4 += '<div class="page4_right" style="left:786.6px;top:0;"></div></div>';
+			str8_page4 = '<div id="page4_word8" style="width:874px;height:85.2px;position:absolute;top:596.4px"><div class="page4_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str8_page4 += '<div style="left:'+((Math.floor(87.4*10*i))/10)+'px;top:0;"></div>';
+			}
+			str8_page4 += '<div class="page4_right" style="left:786.6px;top:0;"></div></div>';
+			str9_page4 = '<div id="page4_word9" style="width:874px;height:85.2px;position:absolute;top:681.6px"><div class="page4_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str9_page4 += '<div style="left:'+((Math.floor(87.4*10*i))/10)+'px;top:0;"></div>';
+			}
+			str9_page4 += '<div class="page4_right" style="left:786.6px;top:0;"></div></div>';
+			str10_page4 = '<div id="page4_word10" style="width:874px;height:85.2px;position:absolute;top:766.8px"><div class="page4_bottom page4_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str10_page4 += '<div class="page4_bottom" style="left:'+((Math.floor(87.4*10*i))/10)+'px;top:0;"></div>';
+			}
+			str10_page4 += '<div class="page4_bottom page4_right" style="left:786.6px;top:0;"></div></div>';
+			
+			page4_wenzi.innerHTML += str_page4+str2_page4+str3_page4+str4_page4+str5_page4+str6_page4+str7_page4+str8_page4+str9_page4+str10_page4;
+			
+			var page4_wenzi2 = document.getElementById('page4_wenzi2');
+			var page4_wenzi2lis = page4_wenzi2.getElementsByTagName('li');
+			var fourAnimate = {};
+			fourAnimate.init = function(){
+				box4.className = 'swiper-slide swiper-no-swiping';
+				for(var i=0;i<page4_spalldivs.length;i++){
+					page4_spalldivs[i].style.left = randomFn(0,1000)+'px';
+					page4_spalldivs[i].style.top = randomFn(0,1800)+'px';
+				}
+				
+				page4t2.staggerTo("#page4_word1 div",0,{
+					rotationY:-90,
+				})
+				page4t3.staggerTo("#page4_word2 div",0,{
+					rotationY:-90,
+				})
+				page4t4.staggerTo("#page4_word3 div",0,{
+					rotationY:-90,
+				})
+				page4t5.staggerTo("#page4_word4 div",0,{
+					rotationY:-90,
+				})
+				page4t6.staggerTo("#page4_word5 div",0,{
+					rotationY:-90,
+				})
+				page4t7.staggerTo("#page4_word6 div",0,{
+					rotationY:-90,
+				})
+				page4t8.staggerTo("#page4_word7 div",0,{
+					rotationY:-90,
+				})
+				page4t9.staggerTo("#page4_word8 div",0,{
+					rotationY:-90,
+				})
+				page4t10.staggerTo("#page4_word9 div",0,{
+					rotationY:-90,
+				})
+				page4t11.staggerTo("#page4_word10 div",0,{
+					rotationY:-90,
+				})
+				page4t11.staggerTo(page4_wenzi2lis,0,{
+					rotationY : -90,
+				})
+				page4t1.staggerTo(page4_spalldivs,3,{
+					ease : Linear.easeInOut,
+					cycle : {
+						rotationY : function(i){
+							return randomFn(-45,45)
+						},
+						rotationX : function(i){
+							return randomFn(-45,45)
+						},
+						bezier : function(){
+							return [
+								{x:randomFn(-500,200),y:0},
+								{x:randomFn(-100,200),y:-500},
+								{x:randomFn(0,200),y:-1000},
+								{x:randomFn(-100,200),y:-1300},
+								{x:randomFn(-500,200),y:-3800},
+								]
+							},
+						},
+				},0.1)
+				page4t1.repeat(-1);
+				page4t2.staggerTo("#page4_word1 div",1,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.1)
+				page4t3.staggerTo("#page4_word2 div",1.1,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.11)
+				page4t4.staggerTo("#page4_word3 div",1.2,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.12)
+				page4t5.staggerTo("#page4_word4 div",1.3,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.13)
+				page4t6.staggerTo("#page4_word5 div",1.4,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.14)
+				page4t7.staggerTo("#page4_word6 div",1.5,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.15)
+				page4t8.staggerTo("#page4_word7 div",1.6,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.16)
+				page4t9.staggerTo("#page4_word8 div",1.7,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.17)
+				page4t10.staggerTo("#page4_word9 div",1.8,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.18)
+				page4t11.staggerTo("#page4_word10 div",1.9,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.19)
+				page4t11.staggerTo(page4_wenzi2lis,1,{
+					rotationY : 0,
+					ease : Bounce.easeOut ,
+					onComplete : function(){
+						box4.className = 'swiper-slide';
+					},
+				},0.2)
+			}
+			
+			
+			//第五屏
+			var page5_jianli = document.getElementById('page5_jianli');
+			var str_page5 = '';
+			var str2_page5 = '';
+			var str3_page5 = '';
+			var str4_page5 = '';
+			var page5t1 = new TimelineMax();
+			var page5t2 = new TimelineMax();
+			var page5t3 = new TimelineMax();
+			var page5t4 = new TimelineMax();
+			str_page5 = '<div id="page5_word1" style="width:828px;height:106px;"><div class="page5_top page5_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str_page5 += '<div class="page5_top" style="left:'+82.8*i+'px;top:0;"></div>';
+			}
+			str_page5 += '<div class="page5_top page5_right" style="left:745.2px;top:0;"></div></div>';
+//			console.log(str_page5);
+			str2_page5 = '<div id="page5_word2" style="width:828px;height:106px;position:absolute;top:106px"><div class="page5_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str2_page5 += '<div style="left:'+82.8*i+'px;top:0;"></div>';
+			}
+			str2_page5 += '<div class="page5_right" style="left:745.2px;top:0;"></div></div>';
+//			console.log(str2_page5);
+			str3_page5 = '<div id="page5_word3" style="width:828px;height:106px;position:absolute;top:212px"><div class="page5_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str3_page5 += '<div style="left:'+82.8*i+'px;top:0;"></div>';
+			}
+			str3_page5 += '<div class="page5_right" style="left:745.2px;top:0;"></div></div>';
+//			console.log(str3_page5);
+			str4_page5 = '<div id="page5_word4" style="width:828px;height:106px;position:absolute;top:318px"><div class="page5_bottom page5_left" style="left:0;top:0;"></div>';
+			for(var i=1;i<9;i++){
+				str4_page5 += '<div class="page5_bottom" style="left:'+82.8*i+'px;top:0;"></div>';
+			}
+			str4_page5 += '<div class="page5_bottom page5_right" style="left:745.2px;top:0;"></div></div>';
+//			console.log(str4_page5);
+			page5_jianli.innerHTML += str_page5+str2_page5+str3_page5+str4_page5;
+			
+			
+			var fiveAnimate = {};
+			fiveAnimate.init = function(){
+				box5.className = 'swiper-slide swiper-no-swiping';
+				page5t1.staggerTo("#page5_word1 div",0,{
+					rotationY:-90,
+					ease : Linear.easeInOut,
+				})
+				page5t2.staggerTo("#page5_word2 div",0,{
+					rotationY:-90,
+					ease : Linear.easeInOut,
+				})
+				page5t3.staggerTo("#page5_word3 div",0,{
+					rotationY:-90,
+					ease : Linear.easeInOut,
+				})
+				page5t4.staggerTo("#page5_word4 div",0,{
+					rotationY:-90,
+					ease : Linear.easeInOut,
+				})
+				page5t4.to("#page5_wenzi",0,{
+					opacity : 0,
+					ease : Linear.easeInOut,
+				})
+				page5t1.staggerTo("#page5_word1 div",1,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.1)
+				page5t2.staggerTo("#page5_word2 div",1.5,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.1)
+				page5t3.staggerTo("#page5_word3 div",2,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.1)
+				page5t4.staggerTo("#page5_word4 div",2.5,{
+					rotationY:0,
+					ease : Linear.easeInOut,
+				},0.1)
+				page5t4.to("#page5_wenzi",1,{
+					opacity : 1,
+					ease : Linear.easeInOut,
+					onComplete : function(){
+						box5.className = 'swiper-slide';
+					},
+				})
+			}
+			
+			
+			function randomFn (first,end){
+				return Math.random()*(end-first)+first;
+			}
+			
+			
+		</script>
+	</body>
+</html>
